@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.david.chores.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:title="111 South Lincoln Avenue"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:onClick="moveTab">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111 South Lincoln Avenue"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_menu_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/chore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:title="Chores"
+            android:background="#000000"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chores"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:id="@+id/chore_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/reciept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:title="Reciepts"
+            android:background="#f0f0f0"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reciepts"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:id="@+id/reciept_title" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:title="Chores"
+            android:background="#000000"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:id="@+id/other_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
